@@ -136,15 +136,16 @@ function createChatSession(element) {
   
    let text_area = document.querySelector('#text-message');
   let send_icon = chat_section.querySelector('.bxs-send');
-   let message = '';
+   
 
     
 
   send_icon.addEventListener('click', (e) => {
     e.preventDefault()
      e.stopPropagation();
+    
 
-    message = text_area.value;
+     let message = text_area.value;
      
 
   socket.emit('send-message', {
