@@ -129,12 +129,11 @@ span > a {
   .container > div:last-of-type {
     border-left: 1px solid var(--border);
     margin-left: -2rem;
-    padding-left: 2rem;
   }
 }
 /* chat page styles */
 .container-chat {
-  width: min(90%, 1100px);
+  width: min(88%, 1100px);
   margin: 0 auto;
 }
 .columns {
@@ -151,7 +150,8 @@ span > a {
   padding: 10px 1rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: .5rem;
+  margin-top: 30px;
 }
 
 .search-container i {
@@ -162,6 +162,25 @@ span > a {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  height: 84vh;
+  width:380px;
+  padding: 5px 10px;
+  overflow-y: auto;
+   scrollbar-width: thin;
+  scrollbar-color: #4169e1 #ffffff; 
+}
+
+.contacts::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.contacts::-webkit-scrollbar-track {
+  background-color: #ffffff; 
+}
+
+.contacts::-webkit-scrollbar-thumb {
+  background-color: #4169e1; 
+  border-radius: 4px;
 }
 
 .contacts .contact,
@@ -265,7 +284,27 @@ span > a {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  overflow-y: auto;
+  width: 720px;
+  height: 70vh;
+  padding: 5px 15px;
+  scrollbar-width: thin;
+  scrollbar-color: #4169e1 #ffffff; 
 }
+
+.messages::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.messages::-webkit-scrollbar-track {
+  background-color: #ffffff; 
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background-color: #4169e1; 
+  border-radius: 4px;
+}
+
 .message {
   width: 100%;
   display: flex;
@@ -300,5 +339,5 @@ span > a {
   display: none !important;
 }
 .visible {
-  display: flex !important;
+  display: block !important;
 }
